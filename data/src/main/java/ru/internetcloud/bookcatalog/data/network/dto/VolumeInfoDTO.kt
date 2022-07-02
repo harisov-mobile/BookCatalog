@@ -26,5 +26,5 @@ data class VolumeInfoDTO(
     val language: String,
 
     @SerializedName("imageLinks")
-    val imageLinks: ImageLinksDTO
+    val imageLinks: ImageLinksDTO?
 )
