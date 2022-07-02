@@ -1,4 +1,4 @@
-package ru.internetcloud.bookcatalog
+package ru.internetcloud.data
 
 import org.junit.Assert.*
 import org.junit.Test
