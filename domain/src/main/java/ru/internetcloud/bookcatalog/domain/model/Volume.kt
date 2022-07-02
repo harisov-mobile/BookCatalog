@@ -5,5 +5,6 @@ data class Volume(
     val title: String,
     val authors: List<String>,
     val imageUrl: String?,
-    val publishedYear: Int
+    val publishedYear: Int,
+    var bookmarked: Boolean
 )
