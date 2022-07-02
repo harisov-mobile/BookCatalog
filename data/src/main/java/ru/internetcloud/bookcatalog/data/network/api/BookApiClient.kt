@@ -9,9 +9,9 @@ private const val BASE_URL = "https://www.googleapis.com/books/v1/"
 
 class BookApiClient {
     private val okHttpClient: OkHttpClient =
-            OkHttpClient.Builder()
-                // .addInterceptor(BasicAuthInterceptor(authParameters.login, authParameters.password))
-                .build()
+        OkHttpClient.Builder()
+            // .addInterceptor(BasicAuthInterceptor(authParameters.login, authParameters.password))
+            .build()
 
     // необходимо эту переменную поместить ниже, чем okHttpClient
     // т.к. сначала должна пройти инициализация переменной okHttpClient
