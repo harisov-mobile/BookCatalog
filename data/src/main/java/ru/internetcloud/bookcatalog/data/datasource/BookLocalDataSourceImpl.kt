@@ -1,6 +1,5 @@
 package ru.internetcloud.bookcatalog.data.datasource
 
-import kotlinx.coroutines.flow.Flow
 import ru.internetcloud.bookcatalog.data.database.BookmarkDao
 import ru.internetcloud.bookcatalog.data.dbmodel.Bookmark
 
