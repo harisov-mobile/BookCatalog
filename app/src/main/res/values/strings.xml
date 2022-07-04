@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BookCatalog</string>
+    <string name="error_message">Error:\n%1$s</string>
+    <string name="empty_list_text_view">Not found</string>
 </resources>

@@ -15,7 +15,7 @@ class BookApiMapper {
             title = bookItemDTO.volumeInfo.title,
             authors = bookItemDTO.volumeInfo.authors,
             imageUrl = bookItemDTO.volumeInfo.imageLinks?.thumbnail?.replace("http://", "https://"),
-            publishedYear = bookItemDTO.volumeInfo.publishedDate.substring(startIndex = 0, endIndex = 3).toInt(),
+            publishedYear = bookItemDTO.volumeInfo.publishedDate.substring(startIndex = 0, endIndex = 4).toInt(),
             bookmarked = false
         )
     }

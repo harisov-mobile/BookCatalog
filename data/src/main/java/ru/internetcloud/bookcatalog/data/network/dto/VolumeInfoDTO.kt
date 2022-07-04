@@ -11,7 +11,7 @@ data class VolumeInfoDTO(
     val subtitle: String,
 
     @SerializedName("authors")
-    val authors: List<String>,
+    val authors: List<String>?,
 
     @SerializedName("publishedDate")
     val publishedDate: String,
