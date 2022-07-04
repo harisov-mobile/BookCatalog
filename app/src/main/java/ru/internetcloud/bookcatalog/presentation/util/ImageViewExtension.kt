@@ -7,6 +7,6 @@ fun ImageView.loadImage(imageUri: String) {
 
     Glide.with(context)
         .load(imageUri)
-        //.placeholder(R.drawable.ic_image)
+        // .placeholder(R.drawable.ic_image)
         .into(this)
 }

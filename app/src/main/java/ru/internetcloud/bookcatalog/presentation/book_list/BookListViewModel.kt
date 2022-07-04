@@ -14,15 +14,15 @@ import ru.internetcloud.bookcatalog.data.mapper.BookApiMapper
 import ru.internetcloud.bookcatalog.data.mapper.BookDbMapper
 import ru.internetcloud.bookcatalog.data.network.api.BookApiClient
 import ru.internetcloud.bookcatalog.data.repository.BookRepositoryImpl
+import ru.internetcloud.bookcatalog.domain.model.Book
 import ru.internetcloud.bookcatalog.domain.model.Result
-import ru.internetcloud.bookcatalog.domain.model.Volume
 import ru.internetcloud.bookcatalog.domain.usecase.GetBooksUseCase
 
 class BookListViewModel : ViewModel() {
 
-    private val _result = MutableLiveData<Result<List<Volume>>>()
-    val result: LiveData<Result<List<Volume>>>
-    get() = _result
+    private val _result = MutableLiveData<Result<List<Book>>>()
+    val result: LiveData<Result<List<Book>>>
+        get() = _result
 
 //    init {
 //        fetchBooks()

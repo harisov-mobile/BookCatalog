@@ -62,7 +62,8 @@ class BookListFragment : Fragment() {
                 }
                 is Result.Error -> {
                     binding.errorTextView.text = getString(
-                        R.string.error_message, currentResult.exception.message.toString())
+                        R.string.error_message, currentResult.exception.message.toString()
+                    )
 
                     binding.errorTextView.visibility = View.VISIBLE
                 }
@@ -78,7 +79,7 @@ class BookListFragment : Fragment() {
     }
 
     private fun setupClickListeners() {
-        //TODO("Not yet implemented")
+        // TODO("Not yet implemented")
     }
 
     override fun onDestroyView() {

@@ -1,16 +1,16 @@
 package ru.internetcloud.bookcatalog.data.mapper
 
 import ru.internetcloud.bookcatalog.data.network.dto.BookItemDTO
-import ru.internetcloud.bookcatalog.domain.model.Volume
+import ru.internetcloud.bookcatalog.domain.model.Book
 
 class BookApiMapper {
 
-    fun fromListDTOToListEntity(listBookItemDTO: List<BookItemDTO>): List<Volume> {
+    fun fromListDTOToListEntity(listBookItemDTO: List<BookItemDTO>): List<Book> {
         return listBookItemDTO.map { fromDTOToEntity(it) }
     }
 
-    private fun fromDTOToEntity(bookItemDTO: BookItemDTO): Volume {
-        return Volume(
+    private fun fromDTOToEntity(bookItemDTO: BookItemDTO): Book {
+        return Book(
             id = bookItemDTO.id,
             title = bookItemDTO.volumeInfo.title,
             authors = bookItemDTO.volumeInfo.authors,

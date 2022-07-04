@@ -1,6 +1,6 @@
 package ru.internetcloud.bookcatalog.domain.model
 
-data class Volume(
+data class Book(
     val id: String,
     val title: String,
     val authors: List<String>?,
